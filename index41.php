@@ -1,5 +1,13 @@
 <?php
-function ehParOuImpar($numero) {
-    return $numero % 2 == 0 ? "Par" : "Ímpar";
+
+function verificaParImpar($numero) {
+    if ($numero % 2 == 0) {
+        return "par";
+    } else {
+        return "ímpar";
+    }
 }
+
+$num = 15;
+echo "O número $num é " . verificaParImpar($num) . ".\n";
 ?>
